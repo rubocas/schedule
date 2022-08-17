@@ -1,0 +1,13 @@
+{
+  "name": "schedule",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rubocas/schedule.git",
+  "author": "Rubens Kappaun <rubens.kappaun@autotrac.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "node-cron": "^3.0.2",
+    "request": "^2.88.2"
+  }
+}
