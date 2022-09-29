@@ -1,7 +1,8 @@
 const cron = require('node-cron');
 var request = require('request');
 
-function AgendaProfissional()
+
+function AcordarServico()
 {
     request('https://agendamento.institutotozatodepsicologia.com/tarefa/AtualizarTarefa?tipotarefa=1', function (error, response, body) {
         console.log('error:', error); // Print the error if one occurred
@@ -9,9 +10,9 @@ function AgendaProfissional()
         console.log('body:', body); // Print the HTML for the Google homepage.
       });
       
-    console.log("Agenda profissional!");
+    console.log("Acordar Servico!");
 }
 
-module.exports = cron.schedule('* 0/59 * * * *', AgendaProfissional, {
+module.exports = cron.schedule('* 0/25 * * * *', AcordarServico, {
     schedule : false
 });
