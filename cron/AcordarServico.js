@@ -13,6 +13,6 @@ function AcordarServico()
     console.log("Acordar Servico!");
 }
 
-module.exports = cron.schedule('0 */30 * * *', AcordarServico, {
+module.exports = cron.schedule('*/25 * * * *', AcordarServico, {
     schedule : false
 });

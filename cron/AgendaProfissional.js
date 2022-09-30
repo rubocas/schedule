@@ -12,6 +12,6 @@ function AgendaProfissional()
     console.log("Agenda profissional!");
 }
 
-module.exports = cron.schedule('0 */30 * * *', AgendaProfissional, {
+module.exports = cron.schedule('*/59 * * * *', AgendaProfissional, {
     schedule : false
 });
